@@ -21,10 +21,11 @@ const About = () => {
                 variants={slideUpVariants}
                 className='text-5xl font-bold text-white uppercase'
                 >
-                    Naveed Wani Construction Pvt. Ltd.
+                    <span className='text-yellow-400'>Naveed Wani</span> <br />Construction Pvt. Ltd.
                 </motion.h1>
                 <div className='w-[120px] h-[6px] bg-yellow-500'></div>
-                <p className='text-3xl italic text-gray-50 mt-[60px]'>Your Trusted Partner in Construction for Over 25 Years</p>
+                <p className='text-3xl italic text-gray-50 mt-[50px]'>At <strong className='text-yellow-400'>Naveed Wani Construction Pvt. Ltd.</strong>, we turn your visions into reality with precision and quality.
+We specialize in crafting spaces that inspire, endure, and reflect your dreams.</p>
 
             </motion.div>
             

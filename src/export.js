@@ -104,5 +104,6 @@ export const clients = [
       "A skilled builder with a strong focus on craftsmanship and attention to detail, dedicated to bringing architectural designs to life with precision.",
     post: "Builder",
   },
+ 
 ];
 
