@@ -90,7 +90,7 @@
 
 import React from "react";
 import mdImg from "../assets/mdPic.jpg";      // 👈 replace with actual image
-// import directorImg from "../assets/director.jpg"; // 👈 replace with actual image
+import directorImg from "../assets/naveed.jpg"; // 👈 replace with actual image
 import { FaBuilding, FaUserTie, FaMapMarkerAlt, FaFileAlt } from 'react-icons/fa';
 
 const Leadership = () => {
@@ -130,7 +130,7 @@ const Leadership = () => {
         {/* Director */}
         <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 p-6 flex flex-col items-center text-center">
           <img
-            // src={directorImg}
+            src={directorImg}
             alt="Director"
             className="w-40 h-40 object-cover rounded-full border-4 border-yellow-500 mb-4"
           />

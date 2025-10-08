@@ -299,12 +299,146 @@
 
 
 
+// import React from 'react';
+// import heroimg from '../assets/heroimg.png';
+// import backgroundImg from '../assets/bgimg.jpg';
+// import { motion } from 'framer-motion';
+// import { slideUpVariants, zoomInVariants } from './animation';
+// import { Link } from 'react-router-dom';
+
+// const Hero = () => {
+//   return (
+//     <div
+//       id="hero"
+//       className="relative w-full min-h-[600px] lg:min-h-[700px] flex flex-col justify-center items-center md:flex-row md:justify-between md:items-center px-4 sm:px-6 lg:px-[150px] py-10 sm:py-16 bg-black bg-cover bg-center"
+//       style={{ backgroundImage: `url(${backgroundImg})` }}
+//     >
+//       {/* Overlay for opacity effect */}
+//       <div className="absolute inset-0 bg-black/70"></div>
+
+//       {/* Text Section */}
+//       <motion.div
+//         initial="hidden"
+//         whileInView="visible"
+//         variants={slideUpVariants}
+//         className="relative z-10 flex-[0.6] flex flex-col justify-center gap-4 lg:gap-8 text-center md:text-left"
+//       >
+//         <motion.h1
+//           variants={slideUpVariants}
+//           className="text-yellow-500 text-lg sm:text-xl"
+//         >
+//           BUILDING YOUR FUTURE
+//         </motion.h1>
+
+//         <motion.h1
+//           variants={slideUpVariants}
+//           className="text-white uppercase text-3xl sm:text-4xl lg:text-[50px] font-bold"
+//         >
+//           We Turn Dreams Into <span className="block mt-2 text-yellow-500">Reality</span>
+//         </motion.h1>
+
+//         <div className="w-[100px] sm:w-[120px] h-[5px] bg-yellow-500 mx-auto md:mx-0"></div>
+
+//         <p className="text-white text-sm sm:text-[18px] lg:text-[20px] leading-relaxed">
+//          <strong className='text-yellow-400 underline decoration-red-700'>Naveed Wani Construction Pvt. Ltd.</strong> Naveed Wani Construction Pvt. Ltd. delivers high-quality construction
+//           projects with innovation, precision, and integrity. From residential
+//           to commercial spaces, we ensure your vision becomes a lasting reality.
+//         </p>
+
+//         {/* Buttons */}
+//         <motion.div
+//           initial="hidden"
+//           whileInView="visible"
+//           variants={zoomInVariants}
+//           className="flex flex-row flex-wrap gap-4 mt-4 justify-center md:justify-start"
+//         >
+//           <Link to="/Leadership">
+//           <motion.button
+//             variants={zoomInVariants}
+//             className="bg-yellow-500 hover:bg-white hover:text-black px-8 sm:px-10 py-3 rounded-lg text-black font-bold transition-all whitespace-nowrap"
+//           >
+//             READ MORE
+//           </motion.button>
+//           </Link>
+//           <Link to="/contact">
+//             <motion.button
+//               variants={zoomInVariants}
+//               className="border-white hover:border-yellow-500 hover:text-yellow-500 border-2 px-8 sm:px-10 py-3 rounded-lg text-white font-bold transition-all whitespace-nowrap"
+//             >
+//               REACH US
+//             </motion.button>
+//           </Link>
+//         </motion.div>
+//       </motion.div>
+
+//       {/* Image Section */}
+//       <motion.div
+//         initial="hidden"
+//         whileInView="visible"
+//         variants={zoomInVariants}
+//         className="hidden md:flex relative z-10 flex-[0.4] justify-center lg:justify-end items-center"
+//       >
+//         <motion.img
+//           src={heroimg}
+//           alt="hero"
+//           className="h-[250px] sm:h-[350px] lg:h-[600px] object-contain"
+//         />
+//       </motion.div>
+//     </div>
+//   );
+// };
+
+// export default Hero;
+
+
+
+
+
+
+
+
+
+
 import React from 'react';
 import heroimg from '../assets/heroimg.png';
 import backgroundImg from '../assets/bgimg.jpg';
 import { motion } from 'framer-motion';
 import { slideUpVariants, zoomInVariants } from './animation';
 import { Link } from 'react-router-dom';
+
+// AnimatedLetters component for letter-by-letter animation
+const AnimatedLetters = ({ text, className }) => {
+  const letters = Array.from(text);
+
+  const container = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.05,
+      },
+    },
+  };
+
+  const child = {
+    hidden: { opacity: 0, x: -50 },
+    visible: { opacity: 1, x: 0, transition: { type: 'spring', stiffness: 100 } },
+  };
+
+  return (
+    <motion.span
+      variants={container}
+      initial="hidden"
+      whileInView="visible"
+      className={className}
+    >
+      {letters.map((letter, index) => (
+        <motion.span key={index} variants={child} className="inline-block">
+          {letter === ' ' ? '\u00A0' : letter}
+        </motion.span>
+      ))}
+    </motion.span>
+  );
+};
 
 const Hero = () => {
   return (
@@ -330,19 +464,21 @@ const Hero = () => {
           BUILDING YOUR FUTURE
         </motion.h1>
 
-        <motion.h1
-          variants={slideUpVariants}
-          className="text-white uppercase text-3xl sm:text-4xl lg:text-[50px] font-bold"
-        >
-          We Turn Dreams Into <span className="block mt-2 text-yellow-500">Reality</span>
+        <motion.h1 className="text-white uppercase text-3xl sm:text-4xl lg:text-[50px] font-bold">
+          <AnimatedLetters text="We Turn Dreams Into " />
+          <span className="block mt-2 text-yellow-500">
+            <AnimatedLetters text="Reality" />
+          </span>
         </motion.h1>
 
         <div className="w-[100px] sm:w-[120px] h-[5px] bg-yellow-500 mx-auto md:mx-0"></div>
 
         <p className="text-white text-sm sm:text-[18px] lg:text-[20px] leading-relaxed">
-          Naveed Wani Construction Pvt. Ltd. delivers high-quality construction
-          projects with innovation, precision, and integrity. From residential
-          to commercial spaces, we ensure your vision becomes a lasting reality.
+          <AnimatedLetters
+            text="Naveed Wani Construction Pvt. Ltd."
+            className="text-yellow-400 underline decoration-red-700"
+          />{' '}
+          delivers high-quality construction projects with innovation, precision, and integrity. From residential to commercial spaces, we ensure your vision becomes a lasting reality.
         </p>
 
         {/* Buttons */}
@@ -352,13 +488,14 @@ const Hero = () => {
           variants={zoomInVariants}
           className="flex flex-row flex-wrap gap-4 mt-4 justify-center md:justify-start"
         >
-          <motion.button
-            variants={zoomInVariants}
-            className="bg-yellow-500 hover:bg-white hover:text-black px-8 sm:px-10 py-3 rounded-lg text-black font-bold transition-all whitespace-nowrap"
-          >
-            READ MORE
-          </motion.button>
-
+          <Link to="/Leadership">
+            <motion.button
+              variants={zoomInVariants}
+              className="bg-yellow-500 hover:bg-white hover:text-black px-8 sm:px-10 py-3 rounded-lg text-black font-bold transition-all whitespace-nowrap"
+            >
+              READ MORE
+            </motion.button>
+          </Link>
           <Link to="/contact">
             <motion.button
               variants={zoomInVariants}
