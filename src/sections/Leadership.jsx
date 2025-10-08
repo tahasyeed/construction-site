@@ -120,7 +120,7 @@ const Leadership = () => {
           <h2 className="text-2xl font-semibold text-gray-800 font-mono">Mr. Mukhtar Ahmad Wani</h2>
           <h3 className="text-yellow-600 font-medium mb-3 underline decoration-red-500">Managing Director</h3>
           <p className="text-gray-600 leading-relaxed">
-            With a vision to redefine construction excellence, Mr. Mukhtar Ahmad Wani
+            With a vision to redefine construction excellence, <strong>Mr. Mukhtar Ahmad Wani </strong> 
             has led the company from humble beginnings to one of the region’s most
             respected firms. His dedication to quality, innovation, and integrity
             continues to guide every project we undertake.
