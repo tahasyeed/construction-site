@@ -64,6 +64,8 @@ import Working from './sections/Working';
 import Testimonials from './sections/Testimonials';
 import ShowProjects from './sections/ShowProjects';
 import Leadership from './sections/Leadership';
+import Career from './sections/Career';
+import ApplyForm from './sections/ApplyForm';
 
 function App() {
   return (
@@ -82,6 +84,7 @@ function App() {
                 <Portfolio />
                 <Working />
                 <Testimonials />
+                {/* <Career/> */}
                 {/* <Leadership /> */}
                 <Contact />
               </>
@@ -91,7 +94,10 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/projects" element={<ShowProjects />} />
           <Route path="/leadership" element={<Leadership />} />
-          <Route path="/contact" element={<Contact />} />
+          {/* <Route path="/contact" element={<Contact />} /> */}
+          <Route path="/career" element={<Career />} />
+         
+          <Route path="/apply/:position" element={<ApplyForm />} />
         </Routes>
       </div>
       <Footer />

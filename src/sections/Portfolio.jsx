@@ -68,10 +68,10 @@
 
 
 import React from 'react';
-import project1 from '../assets/project1.jpg';
-import project2 from '../assets/project2.jpg';
-import project3 from '../assets/project3.jpg';
-import project4 from '../assets/project4.jpg';
+import project1 from '../assets/p1.jpg';
+import project2 from '../assets/p2.jpg';
+import project3 from '../assets/p3.jpg';
+import project4 from '../assets/p4.jpg';
 import project5 from '../assets/project5.jpg';
 import project6 from '../assets/project6.jpg';
 import project7 from '../assets/project7.jpg';

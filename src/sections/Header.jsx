@@ -212,7 +212,7 @@ const Header = () => {
     { link: 'About', path: '/leadership' },
     { link: 'Services', path: '/services' },
     { link: 'Projects', path: '/projects' },
-    { link: 'Contact', path: '/contact' },
+    { link: 'Career', path: '/Career' },
   ];
 
   return (

@@ -399,12 +399,16 @@
 
 
 
+
+
+
 import React from 'react';
 import heroimg from '../assets/heroimg.png';
 import backgroundImg from '../assets/bgimg.jpg';
 import { motion } from 'framer-motion';
 import { slideUpVariants, zoomInVariants } from './animation';
 import { Link } from 'react-router-dom';
+import { Link as ScrollLink } from "react-scroll";
 
 // AnimatedLetters component for letter-by-letter animation
 const AnimatedLetters = ({ text, className }) => {
@@ -412,11 +416,7 @@ const AnimatedLetters = ({ text, className }) => {
 
   const container = {
     hidden: {},
-    visible: {
-      transition: {
-        staggerChildren: 0.05,
-      },
-    },
+    visible: { transition: { staggerChildren: 0.05 } },
   };
 
   const child = {
@@ -447,7 +447,7 @@ const Hero = () => {
       className="relative w-full min-h-[600px] lg:min-h-[700px] flex flex-col justify-center items-center md:flex-row md:justify-between md:items-center px-4 sm:px-6 lg:px-[150px] py-10 sm:py-16 bg-black bg-cover bg-center"
       style={{ backgroundImage: `url(${backgroundImg})` }}
     >
-      {/* Overlay for opacity effect */}
+      {/* Overlay */}
       <div className="absolute inset-0 bg-black/70"></div>
 
       {/* Text Section */}
@@ -457,10 +457,7 @@ const Hero = () => {
         variants={slideUpVariants}
         className="relative z-10 flex-[0.6] flex flex-col justify-center gap-4 lg:gap-8 text-center md:text-left"
       >
-        <motion.h1
-          variants={slideUpVariants}
-          className="text-yellow-500 text-lg sm:text-xl"
-        >
+        <motion.h1 variants={slideUpVariants} className="text-yellow-500 text-lg sm:text-xl">
           BUILDING YOUR FUTURE
         </motion.h1>
 
@@ -488,22 +485,31 @@ const Hero = () => {
           variants={zoomInVariants}
           className="flex flex-row flex-wrap gap-4 mt-4 justify-center md:justify-start"
         >
-          <Link to="/Leadership">
+          {/* READ MORE */}
+          <Link to="/Leadership" className="flex-1 sm:flex-none">
             <motion.button
               variants={zoomInVariants}
-              className="bg-yellow-500 hover:bg-white hover:text-black px-8 sm:px-10 py-3 rounded-lg text-black font-bold transition-all whitespace-nowrap"
+              className="w-full sm:w-auto bg-yellow-500 hover:bg-white hover:text-black px-10 py-3 rounded-lg text-black font-bold transition-all whitespace-nowrap"
             >
               READ MORE
             </motion.button>
           </Link>
-          <Link to="/contact">
+
+          {/* REACH US */}
+          <ScrollLink
+            to="contact"
+            smooth={true}
+            duration={1000}
+            offset={-50}
+            className="flex-1 sm:flex-none"
+          >
             <motion.button
               variants={zoomInVariants}
-              className="border-white hover:border-yellow-500 hover:text-yellow-500 border-2 px-8 sm:px-10 py-3 rounded-lg text-white font-bold transition-all whitespace-nowrap"
+              className="w-full sm:w-auto border-2 border-white hover:border-yellow-500 hover:text-yellow-500 px-10 py-3 rounded-lg text-white font-bold transition-all whitespace-nowrap"
             >
               REACH US
             </motion.button>
-          </Link>
+          </ScrollLink>
         </motion.div>
       </motion.div>
 
