@@ -108,7 +108,7 @@ const Footer = () => {
             <FaLinkedin size={24} />
           </a>
           <a
-            href="mailto:naveedwaniconstruction@gmail.com"
+            href="mailto:naveedwaniconstructions@gmail.com"
             className="hover:text-yellow-500 transition-colors duration-300"
           >
             <FaEnvelope size={24} />
@@ -116,7 +116,7 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <p className="text-sm mt-4 md:mt-0 text-center md:text-right">
+        <p className="text-sm mt-4 md:mt-0 text-center md:text-right hover:text-yellow-500">
           &copy; {new Date().getFullYear()} Naveed Wani Construction Pvt. Ltd.— All rights
           reserved.
         </p>

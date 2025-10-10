@@ -472,8 +472,9 @@ const Hero = () => {
 
         <p className="text-white text-sm sm:text-[18px] lg:text-[20px] leading-relaxed">
           <AnimatedLetters
+          
             text="Naveed Wani Construction Pvt. Ltd."
-            className="text-yellow-400 underline decoration-red-700"
+            className="text-yellow-400 underline decoration-red-700 text font-bold"
           />{' '}
           delivers high-quality construction projects with innovation, precision, and integrity. From residential to commercial spaces, we ensure your vision becomes a lasting reality.
         </p>
@@ -505,7 +506,7 @@ const Hero = () => {
           >
             <motion.button
               variants={zoomInVariants}
-              className="w-full sm:w-auto border-2 border-white hover:border-yellow-500 hover:text-yellow-500 px-10 py-3 rounded-lg text-white font-bold transition-all whitespace-nowrap"
+              className="w-full sm:w-auto border-2 border-white hover:border-yellow-500 hover:text-yellow-500 px-10 py-2.5 rounded-lg text-white font-bold transition-all whitespace-nowrap"
             >
               REACH US
             </motion.button>

@@ -173,7 +173,7 @@ const ShowProjects = () => {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: i * 0.2 }}
-            className="flex flex-col justify-center items-center border-2 border-yellow-500 rounded-2xl p-6 sm:p-8 hover:bg-green-800 hover:text-black transition duration-300"
+            className="flex flex-col justify-center items-center border-2 border-yellow-500 rounded-2xl p-6 sm:p-8 hover:bg-emerald-900 hover:text-yellow-500 transition duration-300"
           >
             <h3 className="text-yellow-500 font-bold text-center text-4xl sm:text-5xl md:text-5xl break-words">
               {startAnimation ? (

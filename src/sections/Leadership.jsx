@@ -120,7 +120,7 @@ const Leadership = () => {
           <h2 className="text-2xl font-semibold text-gray-800 font-mono">Mr. Mukhtar Ahmad Wani</h2>
           <h3 className="text-yellow-600 font-medium mb-3 underline decoration-red-500">Managing Director</h3>
           <p className="text-gray-600 leading-relaxed">
-            With a vision to redefine construction excellence, <strong>Mr. Mukhtar Ahmad Wani </strong> 
+            With a vision to redefine construction excellence, <strong className="text-yellow-700">Mr. Mukhtar Ahmad Wani </strong> 
             has led the company from humble beginnings to one of the region’s most
             respected firms. His dedication to quality, innovation, and integrity
             continues to guide every project we undertake.
@@ -134,7 +134,7 @@ const Leadership = () => {
             alt="Director"
             className="w-40 h-40 object-cover rounded-full border-4 border-yellow-500 mb-4"
           />
-          <h2 className="text-2xl font-semibold text-gray-800 font-mono">Mr. Naveed Mukhtar Wani</h2>
+          <h2 className="text-2xl font-semibold text-grey-800 font-mono">Mr. Naveed Mukhtar Wani</h2>
           <h3 className="text-yellow-600 font-medium mb-3 underline decoration-red-500">Director</h3>
           <p className="text-gray-600 leading-relaxed">
             A true visionary with a deep commitment to excellence and legacy.
@@ -149,7 +149,7 @@ const Leadership = () => {
       <div className="max-w-5xl mx-auto mt-16 px-6 text-center">
         <h2 className="text-3xl font-bold text-gray-800 mb-4">Our Legacy</h2>
         <p className="text-gray-600 leading-relaxed text-lg">
-          Naveed Wani Construction Pvt. Ltd. was founded on the principles of hard
+         <strong className="text-yellow-700">Naveed Wani Construction Pvt. Ltd.</strong> Naveed Wani Construction Pvt. Ltd. was founded on the principles of hard
           work, precision, and commitment to client satisfaction. Over the years,
           we’ve completed landmark projects that reflect not only our expertise
           but also our deep respect for trust and tradition. Our leaders continue
