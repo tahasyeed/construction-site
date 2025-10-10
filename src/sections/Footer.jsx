@@ -84,7 +84,7 @@ const Footer = () => {
           <h1 className="text-xl md:text-2xl font-bold text-center md:text-left underline decoration-red-500">
             Naveed Wani{' '}
             <span className="text-yellow-500 italic">
-              Construction Pvt. Ltd.
+              Constructions Pvt. Ltd.
             </span>
           </h1>
         </a>

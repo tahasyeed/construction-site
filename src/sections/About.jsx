@@ -136,7 +136,7 @@ const About = () => {
         <div className="w-[120px] h-[6px] bg-yellow-500"></div>
 
         <p className="text-3xl italic text-gray-50 mt-[50px]">
-          At <strong className="text-yellow-400">Naveed Wani Construction Pvt. Ltd.</strong>, we turn your visions into reality with precision and quality. We specialize in crafting spaces that inspire, endure, and reflect your dreams.
+          At <strong className="text-yellow-400">Naveed Wani Constructions Pvt. Ltd.</strong>, we turn your visions into reality with precision and quality. We specialize in crafting spaces that inspire, endure, and reflect your dreams.
         </p>
       </motion.div>
 
@@ -148,7 +148,7 @@ const About = () => {
         className="lg:w-[40%] w-full flex flex-col justify-center items-start gap-6"
       >
         <p className="text-white text-lg text-justify">
-          With years of experience in the construction industry, Naveed Wani Construction Pvt. Ltd. is committed to transforming visions into reality. We specialize in delivering high-quality residential and commercial projects with precision, innovation, and integrity. Our dedicated team ensures that every project meets the highest standards of safety, durability, and design excellence, making us a trusted partner for clients who value reliability and professionalism.
+          With years of experience in the construction industry, Naveed Wani Constructions Pvt. Ltd. is committed to transforming visions into reality. We specialize in delivering high-quality residential and commercial projects with precision, innovation, and integrity. Our dedicated team ensures that every project meets the highest standards of safety, durability, and design excellence, making us a trusted partner for clients who value reliability and professionalism.
         </p>
         <p className="text-white text-lg text-justify">
           Explore our extensive portfolio and discover why we are the go-to builders for projects across the region.

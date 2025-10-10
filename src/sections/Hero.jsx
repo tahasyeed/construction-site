@@ -473,7 +473,7 @@ const Hero = () => {
         <p className="text-white text-sm sm:text-[18px] lg:text-[20px] leading-relaxed">
           <AnimatedLetters
           
-            text="Naveed Wani Construction Pvt. Ltd."
+            text="Naveed Wani Constructions Pvt. Ltd."
             className="text-yellow-400 underline decoration-red-700 text font-bold"
           />{' '}
           delivers high-quality construction projects with innovation, precision, and integrity. From residential to commercial spaces, we ensure your vision becomes a lasting reality.

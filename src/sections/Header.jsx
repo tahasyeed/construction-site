@@ -223,13 +223,13 @@ const Header = () => {
         <NavLink to="/" className="flex items-center gap-2 sm:gap-3" onClick={closeMenu}>
           <img
             src={logo}
-            alt="Naveed Wani Construction Logo"
+            alt="Naveed Wani Constructions Logo"
             className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 object-contain"
           />
           <h1 className="text-black text-xl sm:text-2xl md:text-3xl font-bold font-rubik leading-tight">
             Naveed Wani{" "}
             <span className="text-yellow-500 italic block sm:inline">
-              Construction Pvt. Ltd.
+              Constructions Pvt. Ltd.
             </span>
           </h1>
         </NavLink>
