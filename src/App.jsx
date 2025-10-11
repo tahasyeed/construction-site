@@ -49,8 +49,10 @@
 
 
 
+import { useEffect } from "react";
 
 import './App.css';
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Header from './sections/Header';
@@ -69,8 +71,12 @@ import ApplyForm from './sections/ApplyForm';
 // import OngoingProjects from './sections/OngoingProjects';
 
 function App() {
+
+
+ 
   return (
     <Router>
+       
       <Header />
       <div className="pt-20"> {/* Padding to prevent content hiding under fixed navbar */}
         <Routes>

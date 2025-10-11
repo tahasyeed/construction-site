@@ -141,7 +141,7 @@ const Career = () => {
           But don’t worry — exciting opportunities are on the way!  
           Stay tuned and check back soon for upcoming roles at{" "}
           <span className="font-semibold text-yellow-600">
-            Naveed Wani Construction
+            Naveed Wani Constructions
           </span>.
         </p>
         {/* <div className="mt-8">
