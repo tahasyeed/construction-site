@@ -66,7 +66,7 @@ import ShowProjects from './sections/ShowProjects';
 import Leadership from './sections/Leadership';
 import Career from './sections/Career';
 import ApplyForm from './sections/ApplyForm';
-import OngoingProjects from './sections/OngoingProjects';
+// import OngoingProjects from './sections/OngoingProjects';
 
 function App() {
   return (
