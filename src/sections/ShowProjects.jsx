@@ -2,6 +2,8 @@
 // import { motion } from "framer-motion";
 // import { useInView } from "react-intersection-observer";
 
+
+
 // const ShowProjects = () => {
 //   const [ref, inView] = useInView({ threshold: 0.3 });
 //   const [startAnimation, setStartAnimation] = useState(false);
@@ -117,6 +119,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import OngoingProjects from './OngoingProjects';
 
 const ShowProjects = () => {
   const [ref, inView] = useInView({ threshold: 0.3 });
@@ -136,6 +139,7 @@ const ShowProjects = () => {
   }, [inView]);
 
   return (
+    <>
     <div
       ref={ref}
       id="projects"
@@ -188,7 +192,10 @@ const ShowProjects = () => {
         ))}
       </div>
     </div>
+   <OngoingProjects/>
+    </>
   );
+  
 };
 
 // Counter that finishes at the same time for all
@@ -219,3 +226,36 @@ const Counter = ({ value, totalDuration }) => {
 };
 
 export default ShowProjects;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

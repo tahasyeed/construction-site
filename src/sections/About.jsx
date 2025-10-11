@@ -70,6 +70,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { slideUpVariants, zoomInVariants } from './animation';
+import { Link } from 'react-router-dom';
 
 // Helper component to animate letters
 const AnimatedLetters = ({ text, className }) => {
@@ -130,7 +131,7 @@ const About = () => {
             <AnimatedLetters text="Naveed Wani" />
           </span>
           <br />
-          <AnimatedLetters text="Construction Pvt. Ltd." />
+          <AnimatedLetters text="Constructions Pvt. Ltd." />
         </motion.h1>
 
         <div className="w-[120px] h-[6px] bg-yellow-500"></div>
@@ -153,12 +154,17 @@ const About = () => {
         <p className="text-white text-lg text-justify">
           Explore our extensive portfolio and discover why we are the go-to builders for projects across the region.
         </p>
+
+
+        <Link to="/Services">
+
         <motion.button
           variants={zoomInVariants}
           className="bg-yellow-500 hover:bg-white text-white hover:text-black py-3 px-10 rounded-md transition duration-300 font-bold"
         >
           Learn More
         </motion.button>
+        </Link>
       </motion.div>
     </div>
   );

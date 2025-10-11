@@ -66,6 +66,7 @@ import ShowProjects from './sections/ShowProjects';
 import Leadership from './sections/Leadership';
 import Career from './sections/Career';
 import ApplyForm from './sections/ApplyForm';
+import OngoingProjects from './sections/OngoingProjects';
 
 function App() {
   return (
@@ -84,6 +85,7 @@ function App() {
                 <Portfolio />
                 <Working />
                 <Testimonials />
+              
                 {/* <Career/> */}
                 {/* <Leadership /> */}
                 <Contact />

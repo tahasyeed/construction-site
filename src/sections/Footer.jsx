@@ -117,7 +117,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <p className="text-sm mt-4 md:mt-0 text-center md:text-right hover:text-yellow-500">
-          &copy; {new Date().getFullYear()} Naveed Wani Construction Pvt. Ltd.— All rights
+          &copy; {new Date().getFullYear()} Naveed Wani Constructions Pvt. Ltd.— All rights
           reserved.
         </p>
       </div>
