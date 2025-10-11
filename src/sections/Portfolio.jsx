@@ -76,6 +76,10 @@ import project5 from '../assets/project5.jpg';
 import project6 from '../assets/project6.jpg';
 import project7 from '../assets/project7.jpg';
 import project8 from '../assets/project8.jpg';
+import newImg1 from '../assets/pf2.jpg';
+import newImg2 from '../assets/pf1.jpg';
+import newImg3 from '../assets/pf3.jpg';
+import newImg4 from '../assets/pf4.jpg';
 
 import { motion } from 'framer-motion';
 import { slideUpVariants, zoomInVariants } from './animation';
@@ -83,7 +87,7 @@ import { slideUpVariants, zoomInVariants } from './animation';
 const Portfolio = () => {
   const projects = [
     project1, project2, project3, project4,
-    project5, project6, project7, project8
+    newImg1, newImg2, newImg3, newImg4
   ];
 
   return (

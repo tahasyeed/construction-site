@@ -86,6 +86,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import hospitalImg from "../assets/p1.jpg"
 import video from "../assets/video.mp4"
+import pImg from "../assets/pf1.jpg"
 
 // Sample data
 const ongoingProjects = [
@@ -105,7 +106,7 @@ const ongoingProjects = [
   },
   {
     title: "Greenfield Villas",
-    media: "https://media.istockphoto.com/id/507122313/photo/crane-and-construction-site.jpg?s=612x612&w=0&k=20&c=6xB2DdDsShSYAnZvTs3jzfZRTpon4py-ZYmiWtLyBHA=",
+    media: pImg,
     type: "image",
     description:
       "Luxury villas with spacious layouts, landscaped gardens, and premium finishes.",
